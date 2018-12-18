@@ -4,6 +4,7 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="default" extends="struts-default">
+		
 		<action name="register" class="org.websparrow.action.RegisterAction">
 			<result name="REGISTER">/register.jsp</result>
 		</action>
@@ -15,11 +16,6 @@
 		</action>
 		<action name="deleterecord" class="org.websparrow.action.DeleteAction">
 			<result name="DELETE">/delete.jsp</result>
-		</action>
-		
-		<!-- exchange -->
-		<action name="exchange" class="org.websparrow.action.Exchange3" method="execute">
-			<result name="EXCHANGE">/exchange.jsp</result>
 		</action>
 		
 	</package>
